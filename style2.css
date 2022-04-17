@@ -1,0 +1,48 @@
+body {
+
+
+    height: 100vh;
+    display: grid;
+    border: 1px solid red;
+    grid-template-areas:
+        'header header header'
+        'nav content sidebar'
+        'nav footer footer'
+    ;
+    /* This just the text representation of the layout we want. 
+    We can write anything we want besides the wriiten text. */
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 4fr 70px;
+}
+
+header,
+main,
+nav,
+aside,
+footer {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    border: 1px solid skyblue;
+}
+
+header {
+    grid-area: header;
+
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}

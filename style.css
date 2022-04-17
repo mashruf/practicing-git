@@ -94,9 +94,9 @@ it works to the row.this is rarely used.
     padding: 10px;
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     /* We can use this if we dont want to use media query to make the 
-    layout responsive. The container will be auto filled by its items.
+    layout responsive.
     */
     gap: 10px;
 
